@@ -1,0 +1,29 @@
+# config.py
+from pathlib import Path
+import logging
+
+# Paths
+BASE_DIR = Path(__file__).parent
+UPLOAD_DIR = BASE_DIR / "uploads"
+VECTOR_DB_DIR = BASE_DIR / "vector_db"
+DB_PATH = BASE_DIR / "db" / "research_bot.db"
+EXPORT_DIR = BASE_DIR / "exports"
+LOG_PATH = BASE_DIR / "logs" / "app.log"
+
+for dir_path in [UPLOAD_DIR, VECTOR_DB_DIR, EXPORT_DIR, BASE_DIR / "db", BASE_DIR / "logs"]:
+    dir_path.mkdir(parents=True, exist_ok=True)
+
+# LLM and Embeddings
+OLLAMA_MODEL = "llama3"
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+
+# APIs (optional)
+SEMANTIC_SCHOLAR_API_KEY = None
+
+# Logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.FileHandler(LOG_PATH), logging.StreamHandler()]
+)
+logger = logging.getLogger(__name__)

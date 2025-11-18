@@ -1,0 +1,19 @@
+streamlit==1.38.0
+langchain==0.3.0
+langchain-community==0.3.0
+sentence-transformers==3.0.1
+pdfplumber==0.11.4
+python-docx==1.1.2
+ollama==0.3.1
+semanticscholar==0.9.0
+habanero==1.2.6
+arxiv==2.2.0
+requests==2.32.3
+scikit-learn==1.5.1
+spacy==3.7.6
+pandas==2.2.2
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+pytest==8.3.2
+openai-whisper @ git+https://github.com/openai/whisper.git
+# PyMuPDF wheel for Python 3.11
+pymupdf==1.24.10

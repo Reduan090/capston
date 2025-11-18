@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    name: Unit tests (hosted)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: 3.11
+          activate-environment: capstone
+          environment-file: environment.yml
+          environment-name: capstone
+
+      - name: Run tests
+        run: |
+          conda activate capstone
+          python -m pytest -q
+
+  integration:
+    name: Integration tests (manual, self-hosted with Ollama)
+    runs-on: [self-hosted, ollama]
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure Ollama is available
+        run: |
+          ollama --version
+
+      - name: Pull required model (if not already present)
+        run: |
+          ollama pull llama3 || true
+
+      - name: Start Ollama server (background)
+        run: |
+          nohup ollama serve > ollama.log 2>&1 & sleep 3
+
+      - name: Setup Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: 3.11
+          activate-environment: capstone
+          environment-file: environment.yml
+          environment-name: capstone
+
+      - name: Run LLM integration test
+        run: |
+          conda activate capstone
+          python -m pytest tests/test_llm.py::test_ask_llm -q

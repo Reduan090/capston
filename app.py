@@ -4,6 +4,7 @@ from utils.database import init_db
 from modules import (upload_pdf, ai_writer, literature_review, ask_paper,
                      topic_finder, grammar_style, citation_tool, plagiarism_check)
 from config import logger
+from setup_logging import setup_logging
 
 init_db()
 logger = setup_logging() if 'setup_logging' in globals() else logger  # Optional

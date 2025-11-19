@@ -14,7 +14,8 @@ for dir_path in [UPLOAD_DIR, VECTOR_DB_DIR, EXPORT_DIR, BASE_DIR / "db", BASE_DI
     dir_path.mkdir(parents=True, exist_ok=True)
 
 # LLM and Embeddings
-OLLAMA_MODEL = "llama3"
+# Default model for local development on CPU machines — change as needed.
+OLLAMA_MODEL = "gemma3"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
 # APIs (optional)

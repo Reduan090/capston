@@ -1,0 +1,224 @@
+2025-11-19 01:44:59,771 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-19 01:44:59,772 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-19 01:44:59,772 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-19 01:45:00,146 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-11-19 01:45:00,157 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-11-19 01:45:38,175 - config - WARNING - Ollama client not available; falling back to mock LLM responses.
+2025-11-19 01:45:38,178 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-19 01:45:38,178 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-19 01:49:05,284 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-19 01:49:05,284 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-19 01:49:05,284 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-19 01:49:05,284 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-19 01:49:05,286 - faiss.loader - INFO - Loading faiss.
+2025-11-19 01:49:05,375 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-19 01:49:18,279 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-19 01:49:18,279 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-19 01:49:23,309 - config - ERROR - DB init error: near "references": syntax error
+2025-11-19 01:49:59,752 - config - ERROR - DB init error: near "references": syntax error
+2025-11-19 01:49:59,801 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:52:54,339 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-19 01:52:54,339 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-19 01:52:54,339 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-19 01:52:54,339 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-19 01:52:54,339 - faiss.loader - INFO - Loading faiss.
+2025-11-19 01:52:54,361 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-19 01:53:02,540 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-19 01:53:02,540 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-19 01:53:07,609 - config - ERROR - Vector store not found.
+2025-11-19 01:53:07,613 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:53:16,616 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:53:16,631 - config - WARNING - No chunks provided for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation.
+2025-11-19 01:53:16,638 - config - INFO - Added reference: CamScanner 18-11-25 14.18
+2025-11-19 01:53:16,652 - config - ERROR - Vector store not found.
+2025-11-19 01:53:16,659 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:53:38,103 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:53:38,103 - config - WARNING - No chunks provided for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation.
+2025-11-19 01:53:38,111 - config - INFO - Added reference: CamScanner 18-11-25 14.18
+2025-11-19 01:53:38,128 - config - ERROR - Vector store not found.
+2025-11-19 01:53:38,135 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:54:14,373 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-19 01:54:14,373 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-19 01:54:14,373 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-19 01:54:14,373 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-19 01:54:14,373 - faiss.loader - INFO - Loading faiss.
+2025-11-19 01:54:14,394 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-19 01:54:23,044 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-19 01:54:23,044 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-19 01:54:27,711 - config - ERROR - Vector store not found.
+2025-11-19 01:54:27,726 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:54:40,015 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:54:40,015 - config - WARNING - No chunks provided for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation.
+2025-11-19 01:54:40,030 - config - INFO - Added reference: CamScanner 18-11-25 14.18
+2025-11-19 01:54:40,034 - config - ERROR - Vector store not found.
+2025-11-19 01:54:40,046 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:54:59,854 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:54:59,854 - config - WARNING - No chunks provided for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation.
+2025-11-19 01:54:59,874 - config - INFO - Added reference: CamScanner 18-11-25 14.18
+2025-11-19 01:54:59,880 - config - ERROR - Vector store not found.
+2025-11-19 01:54:59,887 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:55:09,986 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-19 01:55:09,986 - config - WARNING - No chunks provided for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation.
+2025-11-19 01:55:10,010 - config - INFO - Added reference: CamScanner 18-11-25 14.18
+2025-11-19 01:55:10,016 - config - ERROR - Vector store not found.
+2025-11-19 01:55:10,024 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:24:50,246 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-23 13:24:50,246 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-23 13:24:50,246 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-23 13:24:50,246 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-23 13:24:50,246 - faiss.loader - INFO - Loading faiss.
+2025-11-23 13:24:50,388 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-23 13:25:09,340 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-23 13:25:09,340 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-23 13:25:16,071 - config - ERROR - DB init error: near "references": syntax error
+2025-11-23 13:25:16,092 - config - ERROR - Vector store not found.
+2025-11-23 13:25:42,642 - config - ERROR - DB init error: near "references": syntax error
+2025-11-23 13:25:42,723 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:41:41,242 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-23 13:41:41,242 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-23 13:41:41,244 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-23 13:41:41,244 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-23 13:41:41,244 - faiss.loader - INFO - Loading faiss.
+2025-11-23 13:41:41,290 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-23 13:42:47,446 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-23 13:42:47,446 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-23 13:42:47,446 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-23 13:42:47,446 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-23 13:42:47,446 - faiss.loader - INFO - Loading faiss.
+2025-11-23 13:42:47,474 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-23 13:43:01,219 - config - ERROR - DB init error: near "references": syntax error
+2025-11-23 13:43:01,235 - config - ERROR - Vector store not found.
+2025-11-23 13:43:55,052 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-23 13:43:55,052 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-23 13:43:55,052 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-23 13:43:55,055 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-23 13:43:55,056 - faiss.loader - INFO - Loading faiss.
+2025-11-23 13:43:55,075 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-23 13:44:06,336 - config - ERROR - DB init error: near "references": syntax error
+2025-11-23 13:44:06,375 - config - ERROR - Vector store not found.
+2025-11-23 13:44:06,440 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:44:39,306 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-23 13:44:39,306 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-23 13:44:39,306 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-23 13:44:39,306 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-23 13:44:39,306 - faiss.loader - INFO - Loading faiss.
+2025-11-23 13:44:39,328 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-23 13:44:49,595 - config - ERROR - Vector store not found.
+2025-11-23 13:44:49,614 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:45:13,224 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-23 13:45:13,224 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-23 13:45:13,226 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-23 13:45:13,226 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-23 13:45:13,226 - faiss.loader - INFO - Loading faiss.
+2025-11-23 13:45:13,257 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-23 13:45:19,229 - config - ERROR - Vector store not found.
+2025-11-23 13:45:19,240 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:46:19,183 - config - INFO - Loaded document: C:\Projects\capstone\uploads\Week-8 hci_compressed.pdf
+2025-11-23 13:46:19,187 - config - WARNING - No non-empty chunks for Week-8 hci_compressed.pdf; skipping vector store creation
+2025-11-23 13:46:19,205 - config - INFO - Added reference: Week-8
+2025-11-23 13:46:19,220 - config - ERROR - Vector store not found.
+2025-11-23 13:46:19,236 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:46:41,015 - config - INFO - Loaded document: C:\Projects\capstone\uploads\Week-8 hci_compressed.pdf
+2025-11-23 13:46:41,015 - config - WARNING - No non-empty chunks for Week-8 hci_compressed.pdf; skipping vector store creation
+2025-11-23 13:46:41,030 - config - INFO - Added reference: Week-8
+2025-11-23 13:46:41,048 - config - ERROR - Vector store not found.
+2025-11-23 13:46:41,062 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:46:47,089 - config - INFO - Loaded document: C:\Projects\capstone\uploads\Week-8 hci_compressed.pdf
+2025-11-23 13:46:47,089 - config - WARNING - No non-empty chunks for Week-8 hci_compressed.pdf; skipping vector store creation
+2025-11-23 13:46:47,115 - config - INFO - Added reference: Week-8
+2025-11-23 13:46:47,131 - config - ERROR - Vector store not found.
+2025-11-23 13:46:47,152 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:46:49,452 - config - INFO - Loaded document: C:\Projects\capstone\uploads\Week-8 hci_compressed.pdf
+2025-11-23 13:46:49,452 - config - WARNING - No non-empty chunks for Week-8 hci_compressed.pdf; skipping vector store creation
+2025-11-23 13:46:49,466 - config - INFO - Added reference: Week-8
+2025-11-23 13:46:49,482 - config - ERROR - Vector store not found.
+2025-11-23 13:46:49,498 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:47:36,305 - config - INFO - Loaded document: C:\Projects\capstone\uploads\Week-8 hci_compressed.pdf
+2025-11-23 13:47:36,305 - config - WARNING - No non-empty chunks for Week-8 hci_compressed.pdf; skipping vector store creation
+2025-11-23 13:47:36,341 - config - INFO - Added reference: Week-8
+2025-11-23 13:47:39,134 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=10 "HTTP/1.1 400 Bad Request"
+2025-11-23 13:47:39,136 - config - ERROR - Semantic Scholar error: Missing required parameter: 'query'
+2025-11-23 13:47:40,142 - config - ERROR - Vector store not found.
+2025-11-23 13:47:40,149 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:47:49,673 - config - ERROR - Vector store not found.
+2025-11-23 13:47:49,687 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:48:11,529 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:48:23,333 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:48:30,638 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:48:30,950 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-23 13:48:30,950 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-23 13:48:30,950 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-23 13:48:30,950 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-23 13:48:30,950 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-23 13:48:30,958 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-23 13:48:43,750 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\fpls-07-01419.pdf.faiss
+2025-11-23 13:48:43,768 - config - INFO - Added reference: Using Deep Learning for Image-Based Plant Disease Detection
+2025-11-23 13:48:44,215 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\fpls-07-01419.pdf.faiss
+2025-11-23 13:48:44,232 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\fpls-07-01419.pdf.faiss
+2025-11-23 13:48:44,234 - config - INFO - Added reference: Using Deep Learning for Image-Based Plant Disease Detection
+2025-11-23 13:48:44,467 - config - INFO - Added reference: Using Deep Learning for Image-Based Plant Disease Detection
+2025-11-23 13:49:06,628 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:49:09,425 - config - ERROR - Vector store not found.
+2025-11-23 13:49:09,460 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-23 13:49:12,191 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\fpls-07-01419.pdf.faiss
+2025-11-23 13:49:12,207 - config - INFO - Added reference: Using Deep Learning for Image-Based Plant Disease Detection
+2025-11-23 13:49:13,852 - config - ERROR - Vector store not found.
+2025-11-23 13:49:15,821 - config - ERROR - Vector store not found.
+2025-11-23 13:49:23,110 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:49:24,177 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:49:49,497 - config - ERROR - Vector store not found.
+2025-11-23 13:49:50,068 - config - ERROR - Vector store not found.
+2025-11-23 13:49:52,281 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:49:53,484 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:50:03,016 - config - ERROR - Vector store not found.
+2025-11-23 13:50:05,031 - config - ERROR - Vector store not found.
+2025-11-23 13:50:09,537 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:50:11,829 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:50:22,044 - config - ERROR - Vector store not found.
+2025-11-23 13:50:23,648 - config - ERROR - Vector store not found.
+2025-11-23 13:50:28,889 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:50:30,966 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:50:39,924 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-23 13:51:06,673 - config - ERROR - Vector store not found.
+2025-11-23 13:51:11,126 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-23 13:51:13,483 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:51:29,714 - config - ERROR - Vector store not found.
+2025-11-23 13:51:37,150 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:51:59,741 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-23 13:52:38,939 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-23 13:54:41,020 - config - ERROR - Vector store not found.
+2025-11-23 13:54:42,850 - config - ERROR - Vector store not found.
+2025-11-23 13:54:43,338 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:54:45,434 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:55:24,011 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-23 13:55:33,378 - config - ERROR - Vector store not found.
+2025-11-23 13:55:35,269 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:55:37,928 - config - ERROR - Vector store not found.
+2025-11-23 13:55:39,762 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:56:01,475 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:56:05,447 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:56:18,448 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-23 13:56:26,455 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:56:28,647 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:56:32,786 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-23 13:58:37,696 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-23 13:58:39,526 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf

@@ -53,7 +53,18 @@ def chunk_text(text: str) -> List[str]:
 def create_vector_store(chunks: List[str], file_name: str) -> None:
     """Create and save FAISS index."""
     from utils.llm import get_embeddings
-    embeddings = get_embeddings(chunks)
+    # Filter out empty or whitespace-only chunks before embedding
+    filtered_chunks = [c for c in chunks if c and c.strip()]
+    if not filtered_chunks:
+        logger.warning(f"No non-empty chunks for {file_name}; skipping vector store creation")
+        return
+
+    embeddings = get_embeddings(filtered_chunks)
+    if not embeddings:
+        logger.error(f"Embedding generation returned no embeddings for {file_name}")
+        return
+
+    # Defensive: ensure embeddings is a non-empty sequence and has dimensionality
     d = len(embeddings[0])
     index = faiss.IndexFlatL2(d)
     index.add(np.array(embeddings).astype('float32'))
@@ -69,5 +80,7 @@ def load_vector_store(file_name: str) -> Tuple[faiss.Index, List[str]]:
         # Reload chunks (in prod, serialize chunks with pickle)
         text, _ = load_document(UPLOAD_DIR / file_name)
         chunks = chunk_text(text)
+        # Filter out any empty chunks for callers
+        chunks = [c for c in chunks if c and c.strip()]
         return index, chunks
     raise FileNotFoundError("Vector store not found.")

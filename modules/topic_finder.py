@@ -8,7 +8,10 @@ from config import UPLOAD_DIR, logger
 def main():
     st.header("Topic Finder")
     files = list(UPLOAD_DIR.iterdir())
-    selected_file = st.selectbox("Select Document", [f.name for f in files])
+    if not files:
+        st.info("No uploaded documents found.")
+        return
+    selected_file = st.selectbox("Select Document", [f.name for f in files], key="topic_file_select")
     if selected_file:
         file_path = UPLOAD_DIR / selected_file
         try:

@@ -9,7 +9,7 @@ from config import UPLOAD_DIR, logger
 def main():
     st.header("Ask a Paper (RAG Chat)")
     files = [f.name for f in UPLOAD_DIR.iterdir() if f.suffix in [".pdf", ".docx", ".txt", ".tex"]]
-    selected_file = st.selectbox("Select Document", files)
+    selected_file = st.selectbox("Select Document", files, key="askpaper_file_select")
     if selected_file:
         try:
             index, chunks = load_vector_store(selected_file)

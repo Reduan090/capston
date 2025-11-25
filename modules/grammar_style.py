@@ -6,7 +6,7 @@ from config import logger
 def main():
     st.header("Grammar & Style Tools")
     text = st.text_area("Input Text")
-    action = st.selectbox("Action", ["Grammar Check", "Paraphrase", "Translate to Academic English"])
+    action = st.selectbox("Action", ["Grammar Check", "Paraphrase", "Translate to Academic English"], key="grammar_action_select")
     if st.button("Process"):
         try:
             if action == "Grammar Check":

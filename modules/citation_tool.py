@@ -8,7 +8,7 @@ from config import logger
 def main():
     st.header("Citation & Reference Tool")
     query = st.text_input("DOI, arXiv ID, or Query")
-    fmt = st.selectbox("Format", ["APA", "MLA", "IEEE", "BibTeX"])
+    fmt = st.selectbox("Format", ["APA", "MLA", "IEEE", "BibTeX"], key="citation_format_select")
     if st.button("Fetch & Generate"):
         try:
             title, authors, year, doi, bibtex = "", "", "", "", ""

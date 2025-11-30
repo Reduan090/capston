@@ -222,3 +222,201 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
 2025-11-23 13:56:32,786 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
 2025-11-23 13:58:37,696 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2025-11-23 13:58:39,526 - config - INFO - Loaded document: C:\Projects\capstone\uploads\fpls-07-01419.pdf
+2025-11-25 11:11:52,160 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-25 11:11:52,160 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-25 11:11:52,160 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-25 11:11:52,160 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-25 11:11:52,162 - faiss.loader - INFO - Loading faiss.
+2025-11-25 11:11:52,290 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-25 11:12:08,766 - config - ERROR - Vector store not found.
+2025-11-25 11:12:08,798 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 20:38:13,718 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 20:38:13,718 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 20:38:13,718 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 20:38:13,718 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 20:38:13,718 - faiss.loader - INFO - Loading faiss.
+2025-11-30 20:38:13,725 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 20:38:21,263 - config - ERROR - Vector store not found.
+2025-11-30 20:38:21,320 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 20:40:36,067 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 20:40:36,067 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 20:40:36,072 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 20:40:36,072 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 20:40:36,072 - faiss.loader - INFO - Loading faiss.
+2025-11-30 20:40:36,075 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 20:40:40,640 - config - ERROR - Vector store not found.
+2025-11-30 20:40:40,643 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 20:40:48,637 - config - ERROR - Vector store not found.
+2025-11-30 20:40:48,643 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 20:41:20,025 - config - ERROR - Vector store not found.
+2025-11-30 20:41:20,040 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 20:45:37,239 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 20:45:37,244 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 20:45:37,244 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 20:45:37,244 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 20:45:37,244 - faiss.loader - INFO - Loading faiss.
+2025-11-30 20:45:37,255 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 20:45:41,915 - config - ERROR - Vector store not found.
+2025-11-30 20:45:41,915 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 22:30:02,220 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 22:30:02,220 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 22:30:02,220 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 22:30:02,220 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 22:30:02,220 - faiss.loader - INFO - Loading faiss.
+2025-11-30 22:30:02,237 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 22:30:02,254 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 22:30:02,454 - config - WARNING - No non-empty chunks for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation
+2025-11-30 22:30:23,603 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 22:30:23,603 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 22:30:23,603 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 22:30:23,603 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 22:30:23,603 - faiss.loader - INFO - Loading faiss.
+2025-11-30 22:30:23,620 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 22:30:23,637 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 22:30:23,854 - config - WARNING - No non-empty chunks for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation
+2025-11-30 22:31:07,097 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 22:31:07,097 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 22:31:07,097 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 22:31:07,097 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 22:31:07,097 - faiss.loader - INFO - Loading faiss.
+2025-11-30 22:31:07,116 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 22:31:07,152 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 22:31:07,398 - config - WARNING - No non-empty chunks for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation
+2025-11-30 22:31:31,389 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 22:31:31,389 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 22:31:31,389 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 22:31:31,389 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 22:31:31,391 - faiss.loader - INFO - Loading faiss.
+2025-11-30 22:31:31,407 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 22:31:31,419 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 22:31:31,619 - config - WARNING - No non-empty chunks for CamScanner 18-11-25 14.18_compressed.pdf; skipping vector store creation
+2025-11-30 22:31:57,602 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 22:31:57,602 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 22:31:57,602 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 22:31:57,602 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 22:31:57,602 - faiss.loader - INFO - Loading faiss.
+2025-11-30 22:31:57,618 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 22:31:57,636 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 22:52:56,210 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 22:52:56,210 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 22:52:56,210 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 22:52:56,210 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 22:52:56,210 - faiss.loader - INFO - Loading faiss.
+2025-11-30 22:52:56,225 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 22:52:56,232 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 22:55:49,647 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 22:55:49,647 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 22:55:49,647 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 22:55:49,647 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 22:55:49,647 - faiss.loader - INFO - Loading faiss.
+2025-11-30 22:55:49,669 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 22:55:49,691 - config - INFO - Loaded document: uploads\sample_text.txt
+2025-11-30 22:55:55,873 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-30 22:55:55,873 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-30 22:55:59,355 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\sample_text.txt.faiss
+2025-11-30 22:55:59,369 - config - INFO - Loaded document: C:\Projects\capstone\uploads\sample_text.txt
+2025-11-30 23:03:40,757 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-11-30 23:03:40,757 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-30 23:03:40,757 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-11-30 23:03:40,757 - faiss.loader - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-11-30 23:03:40,757 - faiss.loader - INFO - Loading faiss.
+2025-11-30 23:03:40,769 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-30 23:03:44,903 - config - ERROR - Vector store not found.
+2025-11-30 23:03:44,909 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 23:04:06,680 - config - ERROR - Vector store not found.
+2025-11-30 23:04:06,689 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 23:04:11,765 - config - ERROR - Vector store not found.
+2025-11-30 23:04:11,765 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 23:04:13,184 - config - ERROR - Vector store not found.
+2025-11-30 23:04:13,190 - config - INFO - Loaded document: C:\Projects\capstone\uploads\CamScanner 18-11-25 14.18_compressed.pdf
+2025-11-30 23:04:49,869 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-30 23:13:14,773 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:13:22,249 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-11-30 23:13:22,249 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-30 23:13:28,033 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:13:28,048 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:13:31,477 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:13:33,953 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:14:10,158 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:14:10,781 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:14:12,738 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:14:12,752 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:14:13,084 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:14:13,094 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:14:13,790 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=give%20me%20key%20finding%20of%20this%20paper%20shortly&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=10 "HTTP/1.1 200 OK"
+2025-11-30 23:14:30,604 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-30 23:14:42,879 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-30 23:14:49,001 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-30 23:15:48,981 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-30 23:15:51,742 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:15:54,362 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:18:17,134 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:18:17,851 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:18:19,867 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:18:19,881 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:18:20,210 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:18:20,226 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:18:22,586 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:19:48,598 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-30 23:19:51,230 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:21:16,625 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:21:18,575 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:21:18,588 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:21:20,717 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:21:22,837 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:22:17,704 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:22:19,678 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:22:19,690 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:22:21,832 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:22:24,036 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:22:35,373 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:22:36,253 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:22:38,209 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:22:38,223 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:22:38,658 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:22:38,673 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:24:41,919 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-30 23:24:44,428 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:24:46,765 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:26:30,410 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:26:32,468 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-11-30 23:26:32,494 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-11-30 23:28:25,103 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-11-30 23:28:27,688 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-11-30 23:28:30,057 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-12-01 00:02:07,347 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-12-01 00:02:09,294 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-12-01 00:02:09,307 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-12-01 00:02:11,638 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-12-01 00:02:13,821 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-12-01 00:02:51,824 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-01 00:03:48,417 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-12-01 00:03:50,394 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\21. Congyingzi Zhang.pdf.faiss
+2025-12-01 00:03:50,410 - config - INFO - Added reference: SIGCHI Conference Paper Format
+2025-12-01 00:05:55,817 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-01 00:05:58,356 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf
+2025-12-01 00:06:00,572 - config - INFO - Loaded document: C:\Projects\capstone\uploads\21. Congyingzi Zhang.pdf

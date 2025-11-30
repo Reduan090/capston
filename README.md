@@ -58,19 +58,37 @@ An advanced AI-powered research assistant built with Streamlit, Ollama, LangChai
 - FFmpeg for Whisper (optional speech-to-text): Install via OS package manager.
 - Run `ollama serve` in a separate terminal.
 
-## Installation
+## Installation (recommended: Conda on Windows)
 1. Clone repo: `git clone <url> && cd ResearchBot`
-2. Virtual env: `python -m venv venv && source venv/bin/activate` (Windows: `venv\Scripts\activate`)
-3. Install deps: `pip install -r requirements.txt`
-4. (Optional) For LaTeX export: Install pandoc[](https://pandoc.org/installing.html)
+2. Create the conda env (this project uses a conda environment for native packages):
+
+```powershell
+conda env create -f environment.yml
+conda activate capstone
+python -m pip install -r requirements-pip.txt
+```
+
+3. (Optional) For LaTeX export: Install `pandoc` (https://pandoc.org/installing.html)
 
 ## Configuration
 - Edit `config.py` for Ollama model, embedding model, API keys (optional for Semantic Scholar).
 
 ## Running
-1. Start Ollama: `ollama serve`
-2. Run app: `streamlit run app.py`
+1. Start Ollama (if you use local LLM): `ollama serve`
+2. Start the app (recommended - PowerShell helper):
+
+```powershell
+.\run_app.ps1
+# or for a local virtualenv: .\run_app_venv.ps1
+```
+
 3. Access: http://localhost:8501
+
+Smoke test: to verify document ingestion and vector store creation without opening the UI run:
+
+```powershell
+conda run -n capstone python scripts/smoke_test.py
+```
 
 ## Testing
 - Install pytest: Already in requirements.

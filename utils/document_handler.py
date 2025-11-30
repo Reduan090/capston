@@ -26,11 +26,56 @@ def load_document(file_path: Path) -> Tuple[str, Dict]:
     metadata = {}
     try:
         if ext == ".pdf":
+            # Try pdfplumber text extraction first (works for many PDFs).
             with pdfplumber.open(file_path) as pdf:
                 text = "\n".join(page.extract_text() or "" for page in pdf.pages)
-            doc = fitz.open(file_path)
-            metadata = doc.metadata  # Title, author, etc.
-            doc.close()
+            # If pdfplumber returned no text (e.g., scanned PDF), try PyMuPDF as a fallback.
+            if not text or not text.strip():
+                try:
+                    doc = fitz.open(file_path)
+                    pages_text = []
+                    for p in doc:
+                        page_text = p.get_text("text") or ""
+                        pages_text.append(page_text)
+                    text = "\n".join(pages_text)
+                    metadata = doc.metadata
+                    doc.close()
+                except Exception:
+                    # Keep text as empty; higher-level code will handle empty chunks.
+                    text = ""
+                    metadata = {}
+                # If still no text, attempt OCR using pytesseract (optional, only if installed).
+                if not text or not text.strip():
+                    try:
+                        import pytesseract
+                        from PIL import Image
+                        from io import BytesIO
+                        doc = fitz.open(file_path)
+                        ocr_pages = []
+                        for p in doc:
+                            try:
+                                pix = p.get_pixmap(dpi=200)
+                                img_bytes = pix.tobytes(output="png")
+                                img = Image.open(BytesIO(img_bytes))
+                                page_text = pytesseract.image_to_string(img)
+                                ocr_pages.append(page_text)
+                            except Exception:
+                                ocr_pages.append("")
+                        doc.close()
+                        ocr_text = "\n".join(ocr_pages)
+                        if ocr_text and ocr_text.strip():
+                            text = ocr_text
+                    except Exception:
+                        # pytesseract not available or OCR failed; continue silently
+                        pass
+            else:
+                # If pdfplumber succeeded, still attempt to load metadata via PyMuPDF.
+                try:
+                    doc = fitz.open(file_path)
+                    metadata = doc.metadata
+                    doc.close()
+                except Exception:
+                    metadata = {}
         elif ext == ".docx":
             doc = Document(file_path)
             text = "\n".join(para.text for para in doc.paragraphs)

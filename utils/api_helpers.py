@@ -1,12 +1,19 @@
 # utils/api_helpers.py
 from semanticscholar import SemanticScholar
 import arxiv
-from habanero import Crossref, counts
+try:
+    from habanero import Crossref, counts
+    HAS_HABANERO = True
+except ImportError:
+    Crossref = None
+    counts = None
+    HAS_HABANERO = False
+
 from typing import List, Dict, Any
 import time
 from config import SEMANTIC_SCHOLAR_API_KEY, logger
 
-cr = Crossref()
+cr = Crossref() if HAS_HABANERO else None
 sch = SemanticScholar(api_key=SEMANTIC_SCHOLAR_API_KEY) if SEMANTIC_SCHOLAR_API_KEY else SemanticScholar()
 
 def fetch_papers(query: str, limit: int = 10) -> List[Dict]:
@@ -21,6 +28,9 @@ def fetch_papers(query: str, limit: int = 10) -> List[Dict]:
 
 def fetch_by_doi(doi: str) -> Dict[str, Any]:
     """Fetch by DOI using CrossRef."""
+    if not HAS_HABANERO or cr is None:
+        logger.warning("habanero not available - install with: pip install habanero")
+        return {}
     try:
         return cr.works(ids=doi)['message']
     except Exception as e:

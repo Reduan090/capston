@@ -1,0 +1,66 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Environment variables
+.env
+.env.local
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+db/*.db
+
+# Log files
+logs/
+*.log
+
+# Vector databases (large binary files)
+vector_db/*.faiss
+
+# Uploaded files (can be large)
+uploads/*.pdf
+uploads/*.docx
+uploads/*.txt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node modules (for frontend)
+node_modules/
+
+# Frontend build output
+frontend/dist/
+frontend/build/

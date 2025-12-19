@@ -1,5 +1,12 @@
 # Implementation of document handling utilities (moved from utils/doc_handler.py)
-import fitz  # PyMuPDF for metadata
+# PyMuPDF (fitz) is optional; on Python 3.13 wheels may be unavailable.
+try:
+    import fitz  # PyMuPDF for metadata and OCR rasterization
+    HAS_FITZ = True
+except Exception:
+    fitz = None
+    HAS_FITZ = False
+
 import pdfplumber
 from docx import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -14,10 +21,10 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20
 
 def load_document(file_path: Path) -> Tuple[str, Dict]:
     """Load document and extract metadata.
-    
+
     Args:
         file_path: Path to file.
-    
+
     Returns:
         Tuple of text content and metadata dict.
     """
@@ -29,8 +36,8 @@ def load_document(file_path: Path) -> Tuple[str, Dict]:
             # Try pdfplumber text extraction first (works for many PDFs).
             with pdfplumber.open(file_path) as pdf:
                 text = "\n".join(page.extract_text() or "" for page in pdf.pages)
-            # If pdfplumber returned no text (e.g., scanned PDF), try PyMuPDF as a fallback.
-            if not text or not text.strip():
+            # If pdfplumber returned no text (e.g., scanned PDF), try PyMuPDF as a fallback if available.
+            if (not text or not text.strip()) and HAS_FITZ:
                 try:
                     doc = fitz.open(file_path)
                     pages_text = []
@@ -38,14 +45,14 @@ def load_document(file_path: Path) -> Tuple[str, Dict]:
                         page_text = p.get_text("text") or ""
                         pages_text.append(page_text)
                     text = "\n".join(pages_text)
-                    metadata = doc.metadata
+                    metadata = getattr(doc, "metadata", {}) or {}
                     doc.close()
                 except Exception:
                     # Keep text as empty; higher-level code will handle empty chunks.
                     text = ""
                     metadata = {}
-                # If still no text, attempt OCR using pytesseract (optional, only if installed).
-                if not text or not text.strip():
+                # If still no text, attempt OCR using pytesseract (optional, only if installed) and fitz available.
+                if (not text or not text.strip()) and HAS_FITZ:
                     try:
                         import pytesseract
                         from PIL import Image
@@ -69,13 +76,14 @@ def load_document(file_path: Path) -> Tuple[str, Dict]:
                         # pytesseract not available or OCR failed; continue silently
                         pass
             else:
-                # If pdfplumber succeeded, still attempt to load metadata via PyMuPDF.
-                try:
-                    doc = fitz.open(file_path)
-                    metadata = doc.metadata
-                    doc.close()
-                except Exception:
-                    metadata = {}
+                # If pdfplumber succeeded, still attempt to load metadata via PyMuPDF if available.
+                if HAS_FITZ:
+                    try:
+                        doc = fitz.open(file_path)
+                        metadata = getattr(doc, "metadata", {}) or {}
+                        doc.close()
+                    except Exception:
+                        metadata = {}
         elif ext == ".docx":
             doc = Document(file_path)
             text = "\n".join(para.text for para in doc.paragraphs)

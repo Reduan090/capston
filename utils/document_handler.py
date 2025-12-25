@@ -103,9 +103,19 @@ def chunk_text(text: str) -> List[str]:
     """Chunk text using LangChain splitter."""
     return text_splitter.split_text(text)
 
-def create_vector_store(chunks: List[str], file_name: str) -> None:
-    """Create and save FAISS index."""
+def create_vector_store(chunks: List[str], file_name: str, store_dir: Path = None) -> None:
+    """Create and save FAISS index.
+    
+    Args:
+        chunks: Text chunks to embed
+        file_name: Name of the file
+        store_dir: Directory to save the vector store (defaults to VECTOR_DB_DIR)
+    """
     from utils.llm import get_embeddings
+    
+    if store_dir is None:
+        store_dir = VECTOR_DB_DIR
+    
     # Filter out empty or whitespace-only chunks before embedding
     filtered_chunks = [c for c in chunks if c and c.strip()]
     if not filtered_chunks:
@@ -121,19 +131,37 @@ def create_vector_store(chunks: List[str], file_name: str) -> None:
     d = len(embeddings[0])
     index = faiss.IndexFlatL2(d)
     index.add(np.array(embeddings).astype('float32'))
-    index_path = VECTOR_DB_DIR / f"{file_name}.faiss"
+    
+    # Ensure store directory exists
+    store_dir.mkdir(parents=True, exist_ok=True)
+    index_path = store_dir / f"{file_name}.faiss"
+    
     faiss.write_index(index, str(index_path))
     logger.info(f"Vector store created: {index_path}")
 
-def load_vector_store(file_name: str) -> Tuple[faiss.Index, List[str]]:
-    """Load FAISS index and chunks (chunks reloaded for simplicity)."""
-    index_path = VECTOR_DB_DIR / f"{file_name}.faiss"
+def load_vector_store(file_name: str, store_dir: Path = None, upload_dir: Path = None) -> Tuple[faiss.Index, List[str]]:
+    """Load FAISS index and chunks (chunks reloaded for simplicity).
+    
+    Args:
+        file_name: Name of the file
+        store_dir: Directory where vector store is saved (defaults to VECTOR_DB_DIR)
+        upload_dir: Directory where original file is stored (defaults to UPLOAD_DIR)
+        
+    Returns:
+        Tuple of (FAISS index, text chunks)
+    """
+    if store_dir is None:
+        store_dir = VECTOR_DB_DIR
+    if upload_dir is None:
+        upload_dir = UPLOAD_DIR
+        
+    index_path = store_dir / f"{file_name}.faiss"
     if index_path.exists():
         index = faiss.read_index(str(index_path))
         # Reload chunks (in prod, serialize chunks with pickle)
-        text, _ = load_document(UPLOAD_DIR / file_name)
+        text, _ = load_document(upload_dir / file_name)
         chunks = chunk_text(text)
         # Filter out any empty chunks for callers
         chunks = [c for c in chunks if c and c.strip()]
         return index, chunks
-    raise FileNotFoundError("Vector store not found.")
+    raise FileNotFoundError(f"Vector store not found: {index_path}")

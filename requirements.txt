@@ -18,3 +18,5 @@ pandas==2.2.2  # For data handling in reviews
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 pytest==8.3.2  # For tests
 openai-whisper @ git+https://github.com/openai/whisper.git  # Optional speech-to-text
+bcrypt==4.1.2  # Secure password hashing
+psycopg[binary]==3.2.12  # PostgreSQL driver

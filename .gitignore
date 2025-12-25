@@ -19,6 +19,9 @@ ENV/
 *.sqlite
 *.sqlite3
 db/*.db
+db/auth.db*
+postgres-data/
+postgres_data/
 
 # Log files
 logs/

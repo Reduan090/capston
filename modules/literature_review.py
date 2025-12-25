@@ -5,12 +5,21 @@ from utils.llm import ask_llm, get_embeddings
 from sklearn.cluster import KMeans
 import numpy as np
 from pathlib import Path
-from config import logger, UPLOAD_DIR
+from config import logger
 from utils.document_handler import load_document
+from utils.user_data import (
+    require_authentication,
+    get_user_upload_dir,
+    get_user_export_dir,
+    log_user_action,
+)
 
 def generate_review_from_uploaded_docs():
     """Generate literature review from uploaded documents"""
-    files = [f for f in UPLOAD_DIR.iterdir() if f.suffix.lower() in ['.pdf', '.docx', '.txt', '.tex']]
+    from utils.user_data import get_current_user_id
+    user_id = get_current_user_id()
+    user_upload_dir = get_user_upload_dir(user_id)
+    files = [f for f in user_upload_dir.iterdir() if f.suffix.lower() in ['.pdf', '.docx', '.txt', '.tex']]
     
     if not files:
         st.warning("No uploaded documents found. Please upload documents first.")
@@ -40,7 +49,7 @@ def generate_review_from_uploaded_docs():
                 doc_info = []
                 
                 for filename in selected_files:
-                    file_path = UPLOAD_DIR / filename
+                    file_path = user_upload_dir / filename
                     text, metadata = load_document(file_path)
                     
                     # Extract key information
@@ -87,6 +96,8 @@ Content: {excerpt}"""
                 # Generate comprehensive literature review
                 st.write("### 📝 Literature Review")
                 
+                log_user_action("literature_review_generate", f"Starting review generation for {len(selected_files)} documents")
+                
                 review_prompt = f"""Generate a comprehensive literature review based on these {len(doc_summaries)} research documents.
 
 Structure the review with:
@@ -104,20 +115,25 @@ Generate a well-structured, academic literature review."""
                 
                 review = ask_llm(review_prompt, temperature=0.5)
                 st.markdown(review)
+                log_user_action("literature_review_complete", f"Generated review for {len(selected_files)} documents")
                 
                 # Export option
                 if st.button("📥 Export Review"):
-                    from config import EXPORT_DIR
-                    export_path = EXPORT_DIR / f"literature_review_{len(selected_files)}_docs.md"
+                    user_id = get_current_user_id()
+                    export_dir = get_user_export_dir(user_id)
+                    export_path = export_dir / f"literature_review_{len(selected_files)}_docs.md"
                     with open(export_path, 'w', encoding='utf-8') as f:
                         f.write(f"# Literature Review\n\n")
                         f.write(f"Based on {len(selected_files)} documents\n\n")
                         f.write(review)
+                    log_user_action("literature_review_export", f"Exported review from {len(selected_files)} documents")
                     st.success(f"Exported to {export_path.name}")
                     
             except Exception as e:
                 st.error(f"Error generating review: {str(e)}")
                 logger.error(f"Literature review error: {e}")
+                log_user_action("literature_review_error", f"Error: {str(e)}")
+                log_user_action("literature_review_error", f"Error: {str(e)}")
 
 def generate_review_from_external_sources():
     """Generate literature review from external sources (Semantic Scholar, arXiv)"""
@@ -182,6 +198,7 @@ Provide:
                 st.error(f"Error: {str(e)}")
                 logger.error(f"External review error: {e}")
 
+@require_authentication
 def main():
     st.header("📚 Literature Review Generator")
     

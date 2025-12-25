@@ -1,12 +1,21 @@
 # config.py
 from pathlib import Path
 import logging
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Paths
 BASE_DIR = Path(__file__).parent
 UPLOAD_DIR = BASE_DIR / "uploads"
 VECTOR_DB_DIR = BASE_DIR / "vector_db"
 DB_PATH = BASE_DIR / "db" / "research_bot.db"
+DATABASE_URL = os.environ.get(
+    "DATABASE_URL",
+    "postgresql://capstone:capstone@localhost:5433/capstone_db",
+)
+USE_POSTGRES = os.environ.get("USE_POSTGRES", "true").lower() == "true"
 EXPORT_DIR = BASE_DIR / "exports"
 LOG_PATH = BASE_DIR / "logs" / "app.log"
 

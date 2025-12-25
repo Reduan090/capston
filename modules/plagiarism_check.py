@@ -3,12 +3,19 @@ import streamlit as st
 from utils.llm import get_embeddings, ask_llm
 from sklearn.metrics.pairwise import cosine_similarity
 from pathlib import Path
-from config import logger, UPLOAD_DIR, EXPORT_DIR
+from config import logger
 from utils.document_handler import load_document, chunk_text
 import numpy as np
 import re
 from collections import defaultdict
 from datetime import datetime
+from utils.user_data import (
+    require_authentication,
+    get_user_upload_dir,
+    get_user_export_dir,
+    log_user_action,
+    get_current_user_id,
+)
 
 def split_into_sentences(text: str) -> list:
     """Split text into sentences for granular plagiarism detection."""
@@ -126,12 +133,15 @@ def paragraph_level_analysis(original: str, checked: str) -> dict:
         logger.error(f"Paragraph analysis error: {e}")
         return {}
 
-def check_against_database(checked_text: str, chunk_size=500) -> dict:
+def check_against_database(checked_text: str, chunk_size=500, user_id=None) -> dict:
     """Advanced check against uploaded documents with chunk-level analysis."""
     try:
         results = defaultdict(list)
         
-        upload_dir = Path(UPLOAD_DIR)
+        if user_id is None:
+            user_id = get_current_user_id()
+        
+        upload_dir = get_user_upload_dir(user_id)
         if not upload_dir.exists():
             return {}
         
@@ -225,6 +235,7 @@ Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 """
     return report
 
+@require_authentication
 def main():
     st.header("🔍 Advanced Plagiarism Checker (Turnitin-Level)")
     st.write("Professional plagiarism detection with multi-level analysis, paraphrasing detection, and comprehensive reporting.")
@@ -279,7 +290,9 @@ def main():
                         
                         # 1. Check against database
                         st.write("**Step 1/3:** Checking against uploaded documents...")
-                        db_matches = check_against_database(text_to_check)
+                        user_id = get_current_user_id()
+                        db_matches = check_against_database(text_to_check, user_id=user_id)
+                        log_user_action("plagiarism_check", f"Checked {len(text_to_check)} characters")
                         
                         # 2. AI Paraphrasing Detection
                         if include_paraphrase:
@@ -389,9 +402,11 @@ def main():
                             report_data['recommendations'] = "See recommendations above"
                             
                             report = generate_plagiarism_report(report_data)
-                            report_file = EXPORT_DIR / f"plagiarism_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+                            export_dir = get_user_export_dir(user_id)
+                            report_file = export_dir / f"plagiarism_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
                             with open(report_file, 'w', encoding='utf-8') as f:
                                 f.write(report)
+                            log_user_action("plagiarism_report_export", f"Exported report: Risk {risk_level}")
                             st.success(f"✅ Report saved to {report_file.name}")
                         
                     except Exception as e:
@@ -546,7 +561,9 @@ def main():
             if checked_text_db:
                 with st.spinner("Searching through uploaded documents..."):
                     try:
-                        matches = check_against_database(checked_text_db)
+                        user_id = get_current_user_id()
+                        matches = check_against_database(checked_text_db, user_id=user_id)
+                        log_user_action("plagiarism_db_search", f"Searched database for matches")
                         
                         if matches:
                             st.warning(f"⚠️ Found matches in {len(matches)} documents")
@@ -596,8 +613,10 @@ def main():
         st.write("View and manage generated plagiarism reports.")
         
         # List report files
-        if EXPORT_DIR.exists():
-            report_files = list(EXPORT_DIR.glob("plagiarism_report_*.md"))
+        user_id = get_current_user_id()
+        export_dir = get_user_export_dir(user_id)
+        if export_dir.exists():
+            report_files = list(export_dir.glob("plagiarism_report_*.md"))
             
             if report_files:
                 st.write(f"**Found {len(report_files)} reports**")
@@ -610,6 +629,7 @@ def main():
                         
                         if st.button(f"Delete", key=f"del_{report_file.name}"):
                             report_file.unlink()
+                            log_user_action("plagiarism_report_delete", f"Deleted report: {report_file.name}")
                             st.success("Report deleted")
                             st.rerun()
             else:

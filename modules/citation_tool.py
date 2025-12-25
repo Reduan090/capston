@@ -3,8 +3,14 @@ import streamlit as st
 from utils.api_helpers import fetch_by_doi, fetch_arxiv, fetch_papers
 from utils.database import add_reference, get_references
 from utils.llm import ask_llm
-from config import logger, EXPORT_DIR
+from config import logger
 import json
+from utils.user_data import (
+    require_authentication,
+    get_user_export_dir,
+    log_user_action,
+    get_current_user_id,
+)
 
 def generate_citation(citation_data, format_type):
     """Generate citation in specified format with high accuracy"""
@@ -260,11 +266,14 @@ def manual_citation_entry():
         # Save to database
         if st.button("💾 Save to Library"):
             try:
+                user_id = get_current_user_id()
                 bibtex = generate_citation(citation_data, "BibTeX")
-                add_reference(title, ", ".join(citation_data['authors']), year, doi, bibtex)
+                add_reference(title, ", ".join(citation_data['authors']), year, doi, bibtex, user_id=user_id)
+                log_user_action("citation_save", f"Saved citation: {title}")
                 st.success("✅ Saved to citation library!")
             except Exception as e:
                 st.error(f"Error saving: {str(e)}")
+                log_user_action("citation_save_error", f"Error: {str(e)}")
 
 def auto_fetch_citation():
     """Automatically fetch citation from DOI or other identifiers"""
@@ -357,17 +366,21 @@ def auto_fetch_citation():
                     # Save option
                     if st.button("💾 Save to Library", key="save_auto"):
                         try:
+                            user_id = get_current_user_id()
                             bibtex = generate_citation(citation_data, "BibTeX")
                             add_reference(
                                 citation_data['title'],
                                 ", ".join(citation_data['authors']),
                                 citation_data['year'],
                                 citation_data.get('doi', ''),
-                                bibtex
+                                bibtex,
+                                user_id=user_id
                             )
+                            log_user_action("citation_auto_fetch_save", f"Auto-fetched and saved: {citation_data['title']}")
                             st.success("✅ Saved to citation library!")
                         except Exception as e:
                             st.error(f"Error saving: {str(e)}")
+                            log_user_action("citation_auto_fetch_error", f"Error: {str(e)}")
                 else:
                     st.warning("No citation data found. Try manual entry.")
                     
@@ -381,7 +394,8 @@ def citation_library():
     st.write("View and manage your saved citations.")
     
     try:
-        refs = get_references()
+        user_id = get_current_user_id()
+        refs = get_references(user_id=user_id)
         
         if not refs:
             st.info("No citations saved yet. Add citations using the tools above.")
@@ -395,7 +409,8 @@ def citation_library():
             export_format = st.selectbox("Export Format", ["BibTeX", "JSON", "Plain Text"])
             if st.button("📥 Export All"):
                 try:
-                    export_file = EXPORT_DIR / f"citations_export.{export_format.lower().replace(' ', '_')}"
+                    export_dir = get_user_export_dir(user_id)
+                    export_file = export_dir / f"citations_export.{export_format.lower().replace(' ', '_')}"
                     
                     if export_format == "BibTeX":
                         content = "\n\n".join([ref[5] for ref in refs if ref[5]])  # BibTeX is at index 5
@@ -412,6 +427,7 @@ def citation_library():
                     with open(export_file, 'w', encoding='utf-8') as f:
                         f.write(content)
                     
+                    log_user_action("citations_export", f"Exported {len(refs)} citations in {export_format} format")
                     st.success(f"✅ Exported to {export_file.name}")
                 except Exception as e:
                     st.error(f"Export error: {str(e)}")
@@ -430,6 +446,7 @@ def citation_library():
         st.error(f"Error loading library: {str(e)}")
         logger.error(f"Library error: {e}")
 
+@require_authentication
 def main():
     st.header("📚 Citation & Reference Manager")
     st.write("Professional citation tool supporting multiple formats including APA, MLA, IEEE, Chicago, Springer, Harvard, Vancouver, and BibTeX.")

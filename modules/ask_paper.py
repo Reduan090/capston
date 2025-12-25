@@ -4,13 +4,27 @@ from pathlib import Path
 import numpy as np
 from utils.document_handler import load_vector_store
 from utils.llm import ask_llm, get_embeddings
-from config import UPLOAD_DIR, logger
+from utils.user_data import (
+    require_authentication,
+    get_user_upload_dir,
+    get_user_vector_db_dir,
+    get_current_user_id,
+    log_user_action,
+    list_user_files
+)
+from config import logger
 
+@require_authentication
 def main():
     st.header("💬 Ask a Paper (RAG Chat)")
     st.write("Interact with your uploaded documents using advanced RAG (Retrieval-Augmented Generation)")
     
-    files = [f.name for f in UPLOAD_DIR.iterdir() if f.suffix.lower() in [".pdf", ".docx", ".txt", ".tex"]]
+    # Get user-specific files
+    user_upload_dir = get_user_upload_dir()
+    user_vdb_dir = get_user_vector_db_dir()
+    
+    files = [f.name for f in user_upload_dir.iterdir() 
+             if f.suffix.lower() in [".pdf", ".docx", ".txt", ".tex"]]
     
     if not files:
         st.warning("No documents found. Please upload documents first in the 'Upload Document' tab.")
@@ -85,7 +99,8 @@ def main():
                 # Load vector stores for selected documents
                 for filename in selected_files:
                     try:
-                        index, chunks = load_vector_store(filename)
+                        # Load from user-specific directories
+                        index, chunks = load_vector_store(filename, store_dir=user_vdb_dir, upload_dir=user_upload_dir)
                         all_chunks.extend([(chunk, filename) for chunk in chunks])
                         
                         # Get embeddings and search
@@ -136,6 +151,8 @@ Provide an accurate answer based ONLY on the context provided. If the answer is 
 Answer:"""
                 
                 answer = ask_llm(prompt, temperature=temperature)
+                
+                log_user_action("ask_paper", f"question={question[:50]} docs={','.join(selected_files)}")
                 
                 # Display answer
                 with st.chat_message("user"):

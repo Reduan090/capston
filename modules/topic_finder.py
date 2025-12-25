@@ -5,9 +5,15 @@ from utils.document_handler import load_document
 from utils.nlp_helpers import extract_topics
 from utils.llm import ask_llm, get_embeddings
 from utils.api_helpers import fetch_papers
-from config import UPLOAD_DIR, logger
+from config import logger
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+from utils.user_data import (
+    require_authentication,
+    get_user_upload_dir,
+    log_user_action,
+    get_current_user_id,
+)
 
 def get_trending_topics_by_domain():
     """Get trending research topics by domain"""
@@ -69,7 +75,9 @@ def extract_topics_from_document():
     """Extract and analyze topics from uploaded documents"""
     st.write("### 📄 Document Topic Analysis")
     
-    files = [f for f in UPLOAD_DIR.iterdir() if f.is_file() and f.suffix.lower() in ['.pdf', '.docx', '.txt', '.tex']]
+    user_id = get_current_user_id()
+    user_upload_dir = get_user_upload_dir(user_id)
+    files = [f for f in user_upload_dir.iterdir() if f.is_file() and f.suffix.lower() in ['.pdf', '.docx', '.txt', '.tex']]
     
     if not files:
         st.info("No uploaded documents found. Upload documents in the 'Upload Document' tab.")
@@ -84,7 +92,7 @@ def extract_topics_from_document():
         analysis_depth = st.selectbox("Analysis Depth", ["Quick", "Standard", "Deep"])
     
     if selected_file and st.button("🔍 Extract Topics"):
-        file_path = UPLOAD_DIR / selected_file
+        file_path = user_upload_dir / selected_file
         
         with st.spinner("Analyzing document..."):
             try:
@@ -96,9 +104,11 @@ def extract_topics_from_document():
                 
                 # Extract topics using NLP
                 topics = extract_topics(text_to_analyze, top_n=num_topics)
+                log_user_action("topic_extraction_start", f"Extracting {num_topics} topics from {selected_file}")
                 
                 if not topics:
                     st.warning("Could not extract topics. Document may be too short or complex.")
+                    log_user_action("topic_extraction_failed", f"Could not extract topics from {selected_file}")
                     return
                 
                 # Display topics
@@ -133,6 +143,7 @@ Format as:
                 
                 analysis = ask_llm(prompt, temperature=0.4)
                 st.markdown(analysis)
+                log_user_action("topic_extraction_complete", f"Successfully extracted {len(topics)} topics")
                 
                 # Topic similarity to trending research
                 st.write("---")
@@ -222,6 +233,7 @@ Make topics current, feasible, and impactful."""
                         st.warning("Could not fetch papers.")
                         logger.error(f"Paper fetch error: {e}")
 
+@require_authentication
 def main():
     st.header("🔬 Topic Finder & Research Trends")
     st.write("Discover trending research topics, analyze document themes, and get AI-powered research suggestions.")

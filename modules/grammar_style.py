@@ -3,6 +3,7 @@ import streamlit as st
 from utils.llm import ask_llm
 from config import logger
 import re
+from utils.user_data import require_authentication, log_user_action, get_current_user_id
 
 def count_words(text):
     """Count words in text"""
@@ -133,6 +134,7 @@ Provide the adjusted version while maintaining the core message."""
     
     return ask_llm(prompt, temperature=0.4)
 
+@require_authentication
 def main():
     st.header("✍️ Advanced Grammar & Style Tools")
     st.write("Enhance your academic writing with AI-powered grammar checking, paraphrasing, and style improvement.")
@@ -176,6 +178,7 @@ def main():
                     try:
                         result = grammar_check_enhanced(text)
                         st.markdown(result)
+                        log_user_action("grammar_check", f"Checked {count_words(text)} words")
                         
                         # Option to accept changes
                         if st.button("📋 Copy Corrected Version"):
@@ -183,6 +186,7 @@ def main():
                     except Exception as e:
                         st.error(f"Error: {str(e)}")
                         logger.error(f"Grammar check error: {e}")
+                        log_user_action("grammar_check_error", f"Error: {str(e)}")
     
     # Tab 2: Paraphrase
     with tab2:

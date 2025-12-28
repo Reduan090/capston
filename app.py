@@ -74,3 +74,4 @@ with tabs[6]:
 
 with tabs[7]:
     plagiarism_check.main()
+    

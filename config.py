@@ -10,12 +10,10 @@ load_dotenv()
 BASE_DIR = Path(__file__).parent
 UPLOAD_DIR = BASE_DIR / "uploads"
 VECTOR_DB_DIR = BASE_DIR / "vector_db"
-DB_PATH = BASE_DIR / "db" / "research_bot.db"
 DATABASE_URL = os.environ.get(
     "DATABASE_URL",
     "postgresql://capstone:capstone@localhost:5433/capstone_db",
 )
-USE_POSTGRES = os.environ.get("USE_POSTGRES", "true").lower() == "true"
 EXPORT_DIR = BASE_DIR / "exports"
 LOG_PATH = BASE_DIR / "logs" / "app.log"
 
@@ -26,6 +24,10 @@ for dir_path in [UPLOAD_DIR, VECTOR_DB_DIR, EXPORT_DIR, BASE_DIR / "db", BASE_DI
 # Default model for local development on CPU machines — change as needed.
 OLLAMA_MODEL = "gemma3"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+
+
+# Database backend toggle
+USE_POSTGRES = True
 
 # APIs (optional)
 SEMANTIC_SCHOLAR_API_KEY = None

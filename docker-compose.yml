@@ -1,30 +1,78 @@
-version: '3.8'
+
 
 services:
-  # PostgreSQL 16 database
+  # PostgreSQL 16 Primary Database - CRITICAL SERVICE
   postgres:
-    image: postgres:16
+    image: postgres:16-alpine
     container_name: capstone-postgres
+    restart: always  # CRITICAL: Always restart if container fails
+    
     environment:
       POSTGRES_USER: capstone
       POSTGRES_PASSWORD: capstone
       POSTGRES_DB: capstone_db
+      # Performance tuning for production
+      POSTGRES_INITDB_ARGS: "-c shared_buffers=256MB -c effective_cache_size=1GB -c work_mem=16MB"
+      # Enable WAL for replication and backup
+      POSTGRES_HOST_AUTH_METHOD: md5
+    
     ports:
       - "5433:5432"
+    
+    # VOLUMES: Persistent data storage + backups
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - capstone:/var/lib/postgresql/data
+    
+    # HEALTH CHECK: Critical for Docker orchestration
+    # Checks database every 10 seconds, marks unhealthy after 3 failures
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U capstone"]
+      test: ["CMD-SHELL", "pg_isready -U capstone -h localhost -p 5432"]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 3
+      start_period: 10s
+    
+    # RESOURCE LIMITS: Prevent container from consuming all resources
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+    
+    # LOGGING: For debugging and monitoring
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
     networks:
       - capstone-network
+    
+    # Signal handling for graceful shutdown
+    stop_signal: SIGTERM
+    stop_grace_period: 30s
 
 volumes:
-  postgres_data:
+
+  # Use external Docker volume for primary data
+  capstone:
+    external: true
+
+  # Backup data - for disaster recovery
+  postgres_backups:
     driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./postgres-backups
 
 networks:
   capstone-network:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

@@ -31,9 +31,11 @@ class AuthenticationManager:
             # SQLite performance pragmas
             conn = sqlite3.connect(self.db_path)
             conn.execute('PRAGMA journal_mode=WAL')
-            conn.execute('PRAGMA busy_timeout=5000')  # 5 seconds
+            conn.execute('PRAGMA busy_timeout=10000')  # 10 seconds
+            conn.execute('PRAGMA synchronous=FULL')  # Ensure all writes are synced
             conn.close()
         self._init_auth_db()
+        self._ensure_demo_user()  # Create demo account on startup
 
     def _init_auth_db(self) -> None:
         """Initialize authentication database with users and sessions tables."""
@@ -167,6 +169,13 @@ class AuthenticationManager:
                     (username, email, password_hash_bytes),
                 )
                 conn.commit()
+                # Verify the insert was successful
+                c.execute("SELECT id FROM users WHERE username = ?", (username,))
+                result = c.fetchone()
+                if not result:
+                    conn.close()
+                    logger.error(f"❌ Registration verification failed for {username}")
+                    return False, "❌ Registration failed - please try again"
                 conn.close()
 
             logger.info(f"✅ User registered: {username}")
@@ -230,6 +239,8 @@ class AuthenticationManager:
             
             # SQLite path
             conn = sqlite3.connect(self.db_path)
+            conn.execute('PRAGMA journal_mode=WAL')
+            conn.execute('PRAGMA busy_timeout=10000')
             c = conn.cursor()
             c.execute(
                 "SELECT id, password_hash FROM users WHERE username = ? AND is_active = 1",
@@ -238,6 +249,7 @@ class AuthenticationManager:
             result = c.fetchone()
 
             if result is None:
+                conn.close()
                 logger.warning(f"⚠️ Failed login attempt: user {username} not found")
                 return False, "❌ Invalid username or password", None
 
@@ -478,6 +490,29 @@ class AuthenticationManager:
         if not any(c.isdigit() for c in password):
             return False
         return True
+
+    def _ensure_demo_user(self) -> None:
+        """Ensure demo account exists for testing."""
+        try:
+            # Check if demo user already exists
+            demo_user_info = self.get_user_info("demo")
+            if demo_user_info:
+                return  # Demo user already exists
+            
+            # Create demo user with fixed credentials
+            demo_username = "demo"
+            demo_email = "demo@research-bot.local"
+            demo_password = "Demo123456"
+            
+            # Register demo user silently
+            success, _ = self.register_user(demo_username, demo_email, demo_password)
+            if success:
+                logger.info("✅ Demo account created successfully")
+            else:
+                # Demo account might already exist, which is fine
+                logger.info("✅ Demo account already exists or is ready")
+        except Exception as e:
+            logger.warning(f"⚠️ Could not ensure demo user: {e}")
 
 
 # Singleton instance for app-wide use

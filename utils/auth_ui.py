@@ -59,13 +59,15 @@ def show_login_page() -> bool:
 
         with tab2:
             st.subheader("Create Your Account")
+            st.info("📝 **Note:** After registration, use the same credentials to login immediately.")
 
-            reg_username = st.text_input("Choose Username", key="reg_username")
-            reg_email = st.text_input("Email Address", key="reg_email")
+            reg_username = st.text_input("Choose Username", key="reg_username", help="3-20 characters, no spaces")
+            reg_email = st.text_input("Email Address", key="reg_email", help="Must be valid email format")
             reg_password = st.text_input(
                 "Password (min 8 chars, uppercase, lowercase, numbers)",
                 type="password",
                 key="reg_password",
+                help="Example: MyPassword123"
             )
             reg_password_confirm = st.text_input(
                 "Confirm Password", type="password", key="reg_password_confirm"
@@ -85,6 +87,7 @@ def show_login_page() -> bool:
                     if success:
                         st.success(message)
                         st.balloons()
+                        st.info(f"✅ **Account Created Successfully!**\n\n**Username:** `{reg_username}`\n\nPlease use these credentials to login in the 'Login' tab.")
                         logger.info(f"✅ New user registered: {reg_username}")
                     else:
                         st.error(message)

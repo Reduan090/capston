@@ -1,17 +1,351 @@
-2025-12-25 21:00:16,623 - faiss.loader - INFO - Loading faiss with AVX512 support.
-2025-12-25 21:00:16,623 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+2025-12-27 16:34:59,334 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-27 16:34:59,334 - faiss.loader - INFO - Could not load library with AVX512 support due to:
 ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
-2025-12-25 21:00:16,624 - faiss.loader - INFO - Loading faiss with AVX2 support.
-2025-12-25 21:00:16,645 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
-2025-12-25 21:00:23,812 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:05:30,781 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:05:46,761 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:05:57,847 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:06:06,326 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:06:10,523 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:06:10,726 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:07:03,069 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:07:18,700 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:07:18,930 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:07:19,620 - config - INFO - PostgreSQL DB initialized
-2025-12-25 22:07:19,772 - config - ERROR - Library error: 1
+2025-12-27 16:34:59,334 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-27 16:34:59,357 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-27 16:41:15,791 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-27 16:41:15,792 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-27 16:41:15,793 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-27 16:41:15,813 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-27 16:42:15,455 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-27 16:42:15,456 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-27 16:42:15,456 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-27 16:42:15,473 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-27 16:42:21,476 - config - INFO - SQLite DB initialized
+2025-12-27 16:42:21,649 - config - ERROR - Library error: 1
+2025-12-27 16:49:26,114 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-27 16:49:26,115 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-27 16:49:26,115 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-27 16:49:26,136 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-27 16:49:33,739 - config - INFO - SQLite DB initialized
+2025-12-27 17:08:39,046 - config - INFO - SQLite DB initialized
+2025-12-27 17:08:46,613 - config - INFO - SQLite DB initialized
+2025-12-27 17:08:46,761 - config - INFO - SQLite DB initialized
+2025-12-27 17:09:15,983 - config - INFO - SQLite DB initialized
+2025-12-27 17:09:16,115 - config - INFO - SQLite DB initialized
+2025-12-27 17:09:21,063 - config - INFO - SQLite DB initialized
+2025-12-27 17:09:22,570 - config - INFO - SQLite DB initialized
+2025-12-27 17:09:29,502 - config - INFO - SQLite DB initialized
+2025-12-27 17:09:35,882 - config - INFO - SQLite DB initialized
+2025-12-27 17:09:36,099 - config - INFO - SQLite DB initialized
+2025-12-27 17:13:03,070 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-27 17:13:03,071 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-27 17:13:03,072 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-27 17:13:03,441 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-27 17:13:25,580 - config - INFO - SQLite DB initialized
+2025-12-27 17:14:06,664 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-27 17:14:06,664 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-27 17:14:06,665 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-27 17:14:06,683 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-27 17:14:17,036 - config - INFO - SQLite DB initialized
+2025-12-28 14:16:03,054 - config - CRITICAL - FAILED TO INITIALIZE DATABASE CONNECTION POOL: module 'psycopg_pool' has no attribute 'SimpleConnectionPool'
+2025-12-28 14:16:51,387 - config - INFO - Database connection pool initialized successfully
+2025-12-28 14:17:14,108 - config - INFO - Database connection pool initialized successfully
+2025-12-28 14:17:16,299 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-28 14:17:16,300 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-28 14:17:16,300 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-28 14:17:16,522 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-28 14:17:41,753 - config - WARNING - Database connection failed (attempt 1/3). Retrying in 1.0s... Error: couldn't get a connection after 5.00 sec
+2025-12-28 14:17:47,757 - config - WARNING - Database connection failed (attempt 2/3). Retrying in 2.0s... Error: couldn't get a connection after 5.00 sec
+2025-12-28 14:17:54,760 - config - CRITICAL - Database connection failed after 3 attempts. Database is unreachable. Last error: couldn't get a connection after 5.00 sec
+2025-12-28 15:46:43,470 - config - INFO - Database connection pool initialized successfully
+2025-12-28 15:46:44,397 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-28 15:46:44,397 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-28 15:46:44,398 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-28 15:46:44,430 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-28 15:46:59,262 - config - WARNING - Database connection failed (attempt 1/3). Retrying in 1.0s... Error: couldn't get a connection after 5.00 sec
+2025-12-28 15:47:05,264 - config - WARNING - Database connection failed (attempt 2/3). Retrying in 2.0s... Error: couldn't get a connection after 5.00 sec
+2025-12-28 15:47:12,281 - config - CRITICAL - Database connection failed after 3 attempts. Database is unreachable. Last error: couldn't get a connection after 5.00 sec
+2025-12-28 15:47:56,098 - config - WARNING - Database connection failed (attempt 1/3). Retrying in 1.0s... Error: couldn't get a connection after 5.00 sec
+2025-12-28 15:48:02,114 - config - WARNING - Database connection failed (attempt 2/3). Retrying in 2.0s... Error: couldn't get a connection after 5.00 sec
+2025-12-28 15:48:09,126 - config - CRITICAL - Database connection failed after 3 attempts. Database is unreachable. Last error: couldn't get a connection after 5.00 sec
+2025-12-28 15:51:03,604 - psycopg.pool - WARNING - error connecting in 'pool-1': connection timeout expired
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5433', hostaddr: '::1': connection timeout expired
+- host: 'localhost', port: '5433', hostaddr: '127.0.0.1': connection timeout expired
+2025-12-28 15:51:03,605 - psycopg.pool - WARNING - error connecting in 'pool-1': connection timeout expired
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5433', hostaddr: '::1': connection timeout expired
+- host: 'localhost', port: '5433', hostaddr: '127.0.0.1': connection timeout expired
+2025-12-28 15:51:14,313 - psycopg.pool - WARNING - error connecting in 'pool-1': connection timeout expired
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5433', hostaddr: '::1': connection timeout expired
+- host: 'localhost', port: '5433', hostaddr: '127.0.0.1': connection timeout expired
+2025-12-28 15:55:24,690 - psycopg.pool - WARNING - error connecting in 'pool-1': connection timeout expired
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5433', hostaddr: '::1': connection timeout expired
+- host: 'localhost', port: '5433', hostaddr: '127.0.0.1': connection timeout expired
+2025-12-28 15:55:24,800 - psycopg.pool - WARNING - error connecting in 'pool-1': connection timeout expired
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5433', hostaddr: '::1': connection timeout expired
+- host: 'localhost', port: '5433', hostaddr: '127.0.0.1': connection timeout expired
+2025-12-28 15:55:35,354 - psycopg.pool - WARNING - error connecting in 'pool-1': connection timeout expired
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5433', hostaddr: '::1': connection timeout expired
+- host: 'localhost', port: '5433', hostaddr: '127.0.0.1': connection timeout expired
+2025-12-28 15:56:57,376 - config - INFO - Database connection pool initialized successfully
+2025-12-28 15:56:58,154 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-28 15:56:58,155 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-28 15:56:58,155 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-28 15:56:58,184 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-28 15:57:04,128 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INERROR] (host=localhost port=5433 user=capstone database=capstone_db) at 0x1d192329fd0>
+2025-12-28 16:07:59,015 - config - INFO - Database connection pool initialized successfully
+2025-12-28 16:07:59,792 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-28 16:07:59,793 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-28 16:07:59,793 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-28 16:07:59,810 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-28 16:08:04,672 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INERROR] (host=localhost port=5433 user=capstone database=capstone_db) at 0x1ab9bd96900>
+2025-12-28 16:10:48,720 - config - INFO - Database connection pool initialized successfully
+2025-12-28 16:10:49,495 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-28 16:10:49,495 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-28 16:10:49,496 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-28 16:10:49,511 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-28 16:10:54,827 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INERROR] (host=localhost port=5433 user=capstone database=capstone_db) at 0x1f467d32900>
+2025-12-28 16:20:55,807 - config - INFO - Database connection pool initialized successfully
+2025-12-28 16:20:56,560 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-12-28 16:20:56,561 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-12-28 16:20:56,561 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-12-28 16:20:56,579 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-12-28 16:22:21,383 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 16:22:40,058 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:22:42,035 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:23:11,999 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-12-28 16:23:11,999 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-28 16:23:19,174 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 16:23:19,175 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 16:23:19,239 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 16:24:09,354 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:24:11,797 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:24:14,445 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 16:24:14,446 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 16:24:14,520 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 16:24:21,586 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:24:22,792 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:24:23,879 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:24:25,730 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:24:27,982 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 16:24:27,983 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 16:27:22,616 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 16:27:22,618 - config - INFO - User Action | user_id=2 username=Reduan action=generate_outline details=title=medical
+2025-12-28 16:27:22,794 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1ae8550>
+2025-12-28 16:29:57,949 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:29:59,915 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:30:00,207 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:30:02,048 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:30:04,282 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 16:30:04,283 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 16:30:06,362 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:31:46,042 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 16:31:46,044 - config - INFO - User Action | user_id=2 username=Reduan action=literature_review_generate details=Starting review generation for 1 documents
+2025-12-28 16:35:27,738 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 16:35:27,742 - config - INFO - User Action | user_id=2 username=Reduan action=literature_review_complete details=Generated review for 1 documents
+2025-12-28 16:35:27,957 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 16:36:32,014 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:36:34,153 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:36:34,634 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:36:37,200 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:36:38,906 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 16:36:40,192 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 16:36:40,193 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 16:36:40,256 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1ae8550>
+2025-12-28 16:36:44,350 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 16:36:46,339 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 16:36:48,588 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 16:36:48,589 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 16:36:49,359 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:37:20,024 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:37:51,191 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:38:21,852 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:38:52,505 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:39:23,155 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:39:54,314 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:40:25,824 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 16:40:26,454 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=5&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:40:57,598 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=5&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:41:29,658 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=5&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 16:41:30,741 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:42:01,855 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:42:32,505 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:43:03,181 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:43:33,794 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:44:04,532 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:44:35,182 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:45:05,873 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:45:36,501 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:46:08,452 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 16:46:09,075 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:46:40,156 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:47:10,864 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:47:41,943 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:48:12,662 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:48:43,717 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:49:14,829 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:49:45,515 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:50:16,665 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:50:47,773 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=personalized%20medicine&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:50:47,774 - config - ERROR - Semantic Scholar error: RetryError[<Future at 0x225942ab7d0 state=finished raised ConnectionRefusedError>]
+2025-12-28 16:52:57,253 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 16:52:58,123 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:53:28,736 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:53:59,928 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:54:31,003 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:55:01,691 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:55:32,324 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:56:03,010 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:56:33,659 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:57:04,358 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:57:34,968 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=immunotherapy&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 16:57:34,971 - config - ERROR - Semantic Scholar error: RetryError[<Future at 0x2258fc86fd0 state=finished raised ConnectionRefusedError>]
+2025-12-28 16:59:58,143 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 16:59:59,014 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:00:29,643 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:01:01,349 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=0&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 17:01:01,981 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=5&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:01:33,712 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=5&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 17:01:34,317 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:02:05,107 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:02:35,716 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:03:07,312 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=10&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 17:03:07,913 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:03:38,534 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:04:10,224 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=15&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 17:04:11,297 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=20&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:04:16,749 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:04:18,878 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:04:21,165 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:04:21,166 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:04:23,309 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:04:42,824 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=20&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:05:14,289 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=20&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:05:45,206 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=20&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:05:50,441 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 17:05:50,442 - config - INFO - User Action | user_id=2 username=Reduan action=ask_paper details=question=What are the main key points and findings? docs=23. Yizhen Jia.pdf
+2025-12-28 17:05:50,581 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 17:06:16,321 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=20&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:06:47,801 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=20&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 17:06:48,862 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=25&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:06:59,465 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:07:01,326 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:07:03,634 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:07:03,635 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:07:03,706 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 17:07:19,541 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=25&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:07:40,605 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:07:42,699 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:07:45,317 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:07:45,318 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:07:45,390 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 17:07:50,184 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=25&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:07:52,140 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:07:54,110 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:07:56,282 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:07:56,283 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:08:21,614 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=25&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:08:59,955 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=25&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 17:09:05,457 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=30&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 17:09:06,858 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 17:09:06,861 - config - INFO - User Action | user_id=2 username=Reduan action=grammar_check details=Checked 19 words
+2025-12-28 17:09:06,886 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:09:06,953 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 17:09:37,630 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:10:08,713 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:10:39,390 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:11:10,006 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:11:41,169 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:12:12,237 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:12:43,405 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:13:23,490 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=35&limit=5 "HTTP/1.1 200 OK"
+2025-12-28 17:13:24,569 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:13:55,299 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:14:25,909 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:14:56,578 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:15:27,250 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:15:49,491 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:15:51,405 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:15:53,569 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:15:53,570 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:15:53,642 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1a17b60>
+2025-12-28 17:15:58,405 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:16:16,942 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:16:18,945 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:16:19,187 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:16:20,970 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:16:23,183 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:16:23,183 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:16:29,218 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:16:57,191 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 17:16:57,244 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1ae8550>
+2025-12-28 17:16:59,880 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:17:30,504 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:18:01,646 - httpx - INFO - HTTP Request: GET https://api.semanticscholar.org/graph/v1/paper/search?query=mental%20health&fields=abstract,authors,citationCount,citationStyles,corpusId,externalIds,fieldsOfStudy,influentialCitationCount,isOpenAccess,journal,openAccessPdf,paperId,publicationDate,publicationTypes,publicationVenue,referenceCount,s2FieldsOfStudy,title,url,venue,year&offset=40&limit=5 "HTTP/1.1 429 "
+2025-12-28 17:18:01,648 - config - ERROR - Semantic Scholar error: RetryError[<Future at 0x2258f2b4650 state=finished raised ConnectionRefusedError>]
+2025-12-28 17:20:16,006 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:20:17,611 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 17:20:18,978 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:20:21,657 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:20:21,658 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:20:21,745 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x225b1ae8550>
+2025-12-28 17:20:24,541 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:20:26,422 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:20:28,588 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:20:28,589 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:21:12,453 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 17:21:12,535 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x2259422c380>
+2025-12-28 17:24:34,457 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:24:36,405 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:24:38,868 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:24:38,869 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:24:38,953 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x2259422c380>
+2025-12-28 17:24:43,006 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 17:24:44,969 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 17:24:47,179 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 17:24:47,180 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 17:25:46,292 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 17:25:46,344 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x2259422c380>
+2025-12-28 21:23:15,392 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 21:23:17,654 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 21:23:19,921 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 21:23:19,921 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 21:24:00,114 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 21:24:00,164 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x2259422c380>
+2025-12-28 22:39:11,314 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 22:39:12,002 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 22:39:18,379 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 22:39:19,963 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 22:39:22,660 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 22:39:22,662 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 22:39:24,574 - httpx - INFO - HTTP Request: GET https://api.crossref.org/works/10.1038/nature12373 "HTTP/1.1 200 OK"
+2025-12-28 22:39:24,610 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x2258d347240>
+2025-12-28 22:49:55,700 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 22:49:57,380 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 22:49:58,945 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 22:50:01,659 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 22:50:03,943 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 22:50:03,943 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 22:50:04,030 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x2258d346cf0>
+2025-12-28 22:50:07,069 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 22:50:09,577 - config - INFO - User Action | user_id=2 username=Reduan action=plagiarism_check details=Checked 415 characters
+2025-12-28 22:51:31,473 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-12-28 22:58:56,793 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 22:59:01,468 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 22:59:05,284 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 22:59:05,286 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 22:59:05,438 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x2258d346cf0>
+2025-12-28 22:59:18,972 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 22:59:20,844 - config - INFO - User Action | user_id=2 username=Reduan action=upload_file details=filename=23. Yizhen Jia.pdf size=915670
+2025-12-28 22:59:24,517 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 22:59:27,013 - config - INFO - Loaded document: C:\Projects\capstone\uploads\user_2\23. Yizhen Jia.pdf
+2025-12-28 22:59:30,289 - config - INFO - Vector store created: C:\Projects\capstone\vector_db\user_2\23. Yizhen Jia.pdf.faiss
+2025-12-28 22:59:30,290 - config - INFO - User Action | user_id=2 username=Reduan action=document_processed details=filename=23. Yizhen Jia.pdf chunks=69
+2025-12-28 22:59:30,474 - psycopg.pool - WARNING - rolling back returned connection: <psycopg.Connection [INTRANS] (host=localhost port=5433 user=capstone database=capstone_db) at 0x2258d347240>
